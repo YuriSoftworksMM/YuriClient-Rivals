@@ -45,7 +45,7 @@
 
 local arguments = table.pack(...)
 local sharedEnv = getgenv and getgenv() or _G
-local previous = rawget(sharedEnv, 'Yuri Client - Cracked')
+local previous = rawget(sharedEnv, 'Yuri Client - Premium')
 
 if type(previous) == 'table' and (previous.status == 'starting' or previous.status == 'entry_returned') then
     return previous
@@ -61,7 +61,7 @@ local control = {
     stopped = false,
 }
 
-sharedEnv['Yuri Client - Cracked'] = control
+sharedEnv['Yuri Client - Premium'] = control
 
 local previousLoaded = rawget(sharedEnv, 'YH_LOADED')
 local previousLibrary = rawget(sharedEnv, 'Library')
